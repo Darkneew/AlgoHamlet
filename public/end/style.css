@@ -1,0 +1,25 @@
+#title {
+    font-size: 100px;
+    margin-bottom:30px;
+}
+
+#sub {
+    font-size: 60px;
+    margin-bottom:50px;
+}
+
+#mainMenu {
+    display: inline-block;
+    width: 256px;
+    height: 108px;
+    color: white;
+    background-image: url(../assets/GUI/red_256x128.png);
+    padding-top: 20px;
+    font-size: 70px;
+}
+
+html {
+    background-image: url(../assets/misc/bg.png);
+    background-repeat:repeat-x;
+    background-color:#88D388;
+}

@@ -1,0 +1,172 @@
+/* general */
+#main {
+  position: relative;
+  height: 96px;
+  width: 444px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#title {
+  font-size: 100px;
+  background-color: rgba(255,255,255,0.5);
+  display:inline-block;
+}
+
+#subtitle {
+  font-size: 80px;
+  margin-bottom: 50px;
+  background-color: rgba(255,255,255,0.5);
+  display:inline-block;
+}
+
+#play {
+  background-image: url(../assets/GUI/red_192x96.png);
+  width:192px;
+  height:96px;
+  font-size:70px;
+  position: absolute;
+  right: 126px;
+  top:0px;
+  padding-bottom:80px;
+}
+
+html {
+  background-image: url(../assets/misc/bg.png);
+  background-repeat:repeat-x;
+  background-size: cover;
+  background-color:#88D388;
+}
+
+/* popups */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup {
+  margin: 70px auto;
+  color: white;
+  padding: 20px;
+  border-radius: 3vw;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+.popup .close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  transition: all 200ms;
+  width: 64px;
+  height: 64px;
+}
+
+/* popup level */
+
+#closeLevel {
+  background-image: url(../assets/GUI/red_close.png)
+}
+
+#popupLevel {
+  background: #ff2727;
+  width:70%;
+  height:70%;
+}
+
+#levels {
+  background-image: url(../assets/GUI/levels.png);
+  width:96px;
+  height:96px;
+  position: absolute;
+  right: 348px;
+  top:0px;
+}
+
+.levelbutton {
+  display: inline-block;
+  background-image: url(../assets/GUI/red_50x50.png);
+  transition: all 200ms;
+  width: 50px;
+  height: 50px;
+  font-size: 35px;
+  margin:5px
+}
+
+/* skin popup */
+
+#skinContainer {
+  height: 150px;
+  width: 260px;
+  position: relative;
+  top: 50px;
+  left: 270px;
+}
+
+#closeSkin {
+  background-image: url(../assets/GUI/red_close.png)
+}
+
+#popupSkin {
+  background: #ff2727;
+  width:800px;
+  height:400px;
+}
+
+#skinImg {
+  margin:5px;
+  width: 144px;
+  height: 144px;
+  position: absolute;
+  top: 0px;
+  left: 53px;
+}
+
+#skin {
+  background-image: url(../assets/GUI/skin.png);
+  width:96px;
+  height:96px;
+  position: absolute;
+  right: 0px;
+  top:0px;
+}
+
+.skinbutton {
+  display: inline-block;
+  background-image: url(../assets/GUI/red_50x50.png);
+  transition: all 200ms;
+  width: 50px;
+  height: 50px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#skinleft {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+
+#skinright {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Head - metas, links, script -->
+        <title>ALGO HAMLET - Menu</title>
+        <link rel="icon" type="image/png" href="../assets/misc/icon.png" />
+        <link rel="stylesheet" href="../assets/misc/style.css" />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+
+      <!-- title -->
+      <div id="title">ALGO HAMLET</div>
+      <br/>
+      <div id="subtitle">Main Menu</div>
+      
+      <!-- form -->
+      <form action="/" method="POST">
+
+        <!-- main buttons -->
+        <div id="main">
+          <a href="#levelPopup" id="levels"></a> 
+          <button type="submit" id="play">play</button>
+          <a href="#skinPopup" id="skin"></a>
+        </div>
+
+        <!-- level popup -->
+        <div id="levelPopup" class="overlay">
+          <div class="popup" id="popupLevel">
+            <a class="close" id="closeLevel" href="#"></a>
+            <h2 style="margin-bottom:20px">Choose your level :</h2>
+            <input id="levelInput" type="hidden" value=1 name="level"/>
+            <a class="levelbutton" onclick="chooseLevel(1)" href="#">1</a>
+            <a class="levelbutton" onclick="chooseLevel(2)" href="#">2</a>
+            <a class="levelbutton" onclick="chooseLevel(3)" href="#">3</a>
+            <a class="levelbutton" onclick="chooseLevel(4)" href="#">4</a>
+            <a class="levelbutton" onclick="chooseLevel(5)" href="#">5</a>
+            <a class="levelbutton" onclick="chooseLevel(6)" href="#">6</a>
+            <a class="levelbutton" onclick="chooseLevel(7)" href="#">7</a>
+            <a class="levelbutton" onclick="chooseLevel(8)" href="#">8</a>
+            <a class="levelbutton" onclick="chooseLevel(9)" href="#">9</a>
+            <a class="levelbutton" onclick="chooseLevel(10)" href="#">10</a>
+            <a class="levelbutton" onclick="chooseLevel(11)" href="#">11</a>
+            <a class="levelbutton" onclick="chooseLevel(12)" href="#">12</a>
+            <a class="levelbutton" onclick="chooseLevel(13)" href="#">13</a>
+            <a class="levelbutton" onclick="chooseLevel(14)" href="#">14</a>
+          </div>
+        </div>
+        
+        <!-- skin popup -->
+        <div id="skinPopup" class="overlay">
+          <div class="popup" id="popupSkin">
+            <a class="close" id="closeSkin" href="#"></a>
+            <h2 style="margin-bottom:20px">Choose your skin :</h2>
+            <div id="skinContainer">
+              <input id="cInput" type="hidden" value=1 name="c"/>
+              <a class="skinbutton" id="skinleft" onclick="updateSkin(-1)">&lt;</a>
+              <img id="skinImg" src="../assets/previews/c1.png" alt="skin preview"/><br>
+              <a class="skinbutton" id="skinright" onclick="updateSkin(1)">&gt;</a>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+    </body>
+</html>
